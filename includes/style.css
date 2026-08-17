@@ -1,0 +1,79 @@
+body {
+    background: #0f172a url('../bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* شريط حالة التخزين المؤقت الكاش في الأعلى */
+#cache-status {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.85);
+    color: #00ffcc;
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #00ffcc;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* التوسط في منتصف الشاشة */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* شكل الختم الكبير */
+.seal-btn {
+    width: 280px;
+    height: 280px;
+    border: 5px solid #00ffcc;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.35); /* إظهار الخلفية بشكل واضح وطبيعي */
+    box-shadow: 0 0 30px #00ffcc, inset 0 0 20px #00ffcc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+}
+
+.seal-btn:hover, .seal-btn:focus {
+    transform: scale(1.06);
+    box-shadow: 0 0 50px #00ffcc, inset 0 0 30px #00ffcc;
+}
+
+.seal-title {
+    font-size: 28px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+.seal-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00ffcc;
+    margin-top: 8px;
+    text-shadow: 0 0 8px rgba(0, 255, 204, 0.6);
+}
+
+.seal-ver {
+    font-size: 13px;
+    color: #cccccc;
+    margin-top: 6px;
+    letter-spacing: 1px;
+}
